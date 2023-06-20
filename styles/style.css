@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* global css */
+img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 22rem;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 1rem;
+  border-radius: 15px;
+}
+
+.btn {
+  display: inline-block;
+  border-radius: 8px;
+  padding: 0.5rem 1.5rem;
+  margin-top: 0.5rem;
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  font-weight: 500;
+  cursor: pointer;
+  /* customize */
+  background-color: #1c2042;
+  color: white;
+  border: 2px solid #1c2042;
+}
+
+.tracker-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.income-container,
+.expense-container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  padding: 1rem;
+  border: 2px solid gray;
+  gap: 1rem;
+}
+
+.income-balance,
+.expense-balance {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.income-container {
+  border-right: none;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.expense-container {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.history-title {
+  text-align: center;
+}
+
+.transaction-container,
+.amount-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+.transaction,
+.amount {
+  width: 20rem;
+  height: 2.25rem;
+  border-radius: 7px;
+  padding-left: 1rem;
+}
+
+.income-title {
+  color: green;
+}
+
+.expense-title {
+  color: red;
+}
+
+.history-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.minus {
+  width: 80%;
+  height: 2rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 2rem;
+
+  position: relative;
+  border: 2px solid gray;
+  border-right: 5px solid red;
+  font-weight: 700;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.plus {
+  width: 80%;
+  height: 2rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 2rem;
+
+  position: relative;
+  border: 2px solid gray;
+  border-right: 5px solid green;
+  font-weight: 700;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.minus span {
+  font-weight: 500
+}
+
+.plus span {
+  font-weight: 500
+}
+
+.btn-delete {
+  position: absolute;
+  left: -1.10rem;
+  background-color: red;
+  color: #fff;
+  font-weight: 700;
+  border: 1px solid gray;
+  padding: 0.95rem 0.25rem;
+  top: -1.05px;
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.btn-edit {
+  position: absolute;
+  top: -2.05px;
+  right: -1.5rem;
+  background-color: green;
+  color: #fff;
+  font-weight: 700;
+  border: 1px solid gray;
+  padding: 1rem 0.25rem;
+
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.history-container li:hover {
+  border-left: none;
+  /* border-right: none; */
+}
+
+.history-container li:hover .btn-delete {
+  opacity: 1;
+  cursor: pointer;
+
+}
+
+.history-container li:hover .btn-edit {
+  opacity: 1;
+  cursor: pointer;
+
+}
+
+
+@media screen and (min-width: 576px) {}
+
+/* Medium devices (tablets) */
+
+@media (min-width: 768px) {}
+
+/* Large devices (desktops) */
+
+@media (min-width: 991px) {}
+
+/* Extra large devices (large desktops) */
+
+@media (min-width: 1200px) {}

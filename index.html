@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <title>Expense Tracker</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./styles/normalize.css">
+  <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+  <form class="container" id="container">
+    <h1 class="title">Expense Tracker 💲</h1>
+    <div class="balance-container">
+      <h2 class="balance-title">Your Balance</h2>
+      <h2 class="balance" id="balance">₹0</h2>
+    </div>
+    <div class="tracker-container">
+      <div class="income-container">
+        <h3 class="income-title">Income</h3>
+        <h3 class="income-balance" id="income-balance">₹0</h3>
+      </div>
+      <div class="expense-container">
+        <h3 class="expense-title">expense</h3>
+        <h3 class="expense-balance" id="expense-balance">₹0</h3>
+      </div>
+    </div>
+    <h2 class="history-title">History</h2>
+    <div class="history-container" id="history-container">
+
+    </div>
+    <h2 class="history-title">Add new transaction</h2>
+    <div class="transaction-container">
+      <label for="transaction">Transaction</label>
+      <input type="text" name="transaction" placeholder="Enter transaction" id="transaction" class="transaction">
+    </div>
+    <div class="amount-container">
+      <label for="amount">Amount</label>
+      <input type="number" name="amount" placeholder="Enter amount" id="amount" class="amount">
+    </div>
+    <button type="submit" class="btn btn-add" id="btn-add">Add transaction</button>
+    <p class="btn btn-remove" id="btn-remove">Remove All transaction</p>
+  </form>
+
+  <script src="./javascript/script.js"></script>
+</body>
+
+</html>
