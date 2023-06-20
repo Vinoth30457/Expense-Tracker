@@ -53,6 +53,10 @@ body {
   border-radius: 15px;
 }
 
+.title {
+  text-align: center
+}
+
 .btn {
   display: inline-block;
   border-radius: 8px;
