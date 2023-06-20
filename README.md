@@ -14,5 +14,5 @@ Your challenge is to build out this advice generator app using the function and 
 
 ### Links
 
-- Solution URL: [Click here](https://github.com/Vinoth30457/advice-generator-app-main.git)
-- Live Site URL: [Click here](https://splendid-sopapillas-53415b.netlify.app)
+- Solution URL: [Click here](https://github.com/Vinoth30457/Expense-Tracker.git)
+- Live Site URL: [Click here](https://eloquent-rolypoly-0cb25b.netlify.app)
